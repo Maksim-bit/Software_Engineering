@@ -1,6 +1,4 @@
-import java.time.Clock;
-import java.time.Instant;
-import java.time.LocalTime;
+
 
 public class Algorithm1 {
     public static double expt(double b, int n) {
@@ -17,7 +15,7 @@ public class Algorithm1 {
         return result;
     }
 
-    public static void test1() throws InterruptedException {
+    public static void test1() {
         long t1 = System.nanoTime();
         System.out.println("Результат первого " + expt(10, 5));
         long t2 = System.nanoTime();
@@ -27,7 +25,7 @@ public class Algorithm1 {
         System.out.println("Время выполнения второго " + (t3 - t2));
     }
 
-    public static void test2() throws InterruptedException {
+    public static void test2() {
         long t1 = System.nanoTime();
         System.out.println("Результат первого " + exptCycle(10, 5));
         long t2 = System.nanoTime();
@@ -37,7 +35,7 @@ public class Algorithm1 {
         System.out.println("Время выполнения второго " + (t3 - t2));
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void start() {
         System.out.println("Выполнение рекурсии ");
         test1();
         System.out.println("Выполнение цикла");

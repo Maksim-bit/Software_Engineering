@@ -1,12 +1,12 @@
 public class Algorithm2 {
-    public static void main(String[] args) throws InterruptedException {
+    public static void start() {
         System.out.println("Выполнение цикла ");
         test1();
         System.out.println("Выполнение рекурсии");
         test2();
     }
 
-    public static void test1() throws InterruptedException {
+    public static void test1() {
         long t1 = System.nanoTime();
         System.out.println("Результат первого " + countNumber(1, 3));
         long t2 = System.nanoTime();
@@ -16,7 +16,7 @@ public class Algorithm2 {
         System.out.println("Время выполнения второго " + (t3 - t2));
     }
 
-    public static void test2() throws InterruptedException {
+    public static void test2() {
         long t1 = System.nanoTime();
         System.out.println("Результат первого " + countNumberRec(1, 3));
         long t2 = System.nanoTime();
